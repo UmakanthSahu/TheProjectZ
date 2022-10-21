@@ -9,7 +9,7 @@
 
 </head>
 <body>
-	<form action="/register">
+	<form action="/register" method="post">
 		<table align="center">
 			<tr>
 				<td colspan=2  align="center">
@@ -26,9 +26,9 @@
 
 			</tr>
 			<tr>
-				<td><label for="empId">Employee Id:</label></td>
-				<td><input type="text" name="empId"
-					placeholder="Enter your employee Id" id="empId" required></td>
+				<td><label for="employeeId">Employee Id:</label></td>
+				<td><input type="text" name="employeeId"
+					placeholder="Enter your employee Id" id="employeeId" required></td>
 			</tr>
 
 			<tr>
@@ -37,9 +37,9 @@
 					placeholder="Enter your email Id" id="email" required></td>
 			</tr>
 			<tr>
-				<td><label for="phno">Phone Number:</label></td>
-				<td><input type="tel" name="phno"
-					placeholder="Enter your Phone Number" id="phno" required></td>
+				<td><label for="phoneNumber">Phone Number:</label></td>
+				<td><input type="tel" name="phoneNumber"
+					placeholder="Enter your Phone Number" id="phoneNumber" required></td>
 			</tr>
 
 			<tr>

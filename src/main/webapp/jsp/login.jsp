@@ -10,8 +10,8 @@
 </head>
 <body>
 
-	<form>
-		<table align="center">
+	<form action="/login" method="post">
+		<table align="center" >
 			<tr>
 				<td colspan="2" align="center">
 					<h2>Login Page</h2>
