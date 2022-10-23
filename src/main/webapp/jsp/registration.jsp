@@ -9,10 +9,11 @@
 
 </head>
 <body>
-	<form action="/register" method="post">
+	<form action="/register" method="post" id="registrationForm"
+		onsubmit="validate(event)">
 		<table align="center">
 			<tr>
-				<td colspan=2  align="center">
+				<td colspan=2 align="center">
 					<div>
 						<h2>Registration Page</h2>
 					</div>
@@ -23,7 +24,6 @@
 				<td><label for="name">Name:</label></td>
 				<td><input type="text" name="name"
 					placeholder="Enter your name" id="name" required></td>
-
 			</tr>
 			<tr>
 				<td><label for="employeeId">Employee Id:</label></td>
@@ -58,7 +58,8 @@
 			</tr>
 
 			<tr>
-				<td colspan=2  align="center"><input type="submit" value="Register"></td>
+				<td colspan=2 align="center"><input type="submit"
+					value="Register"></td>
 			</tr>
 
 			<tr>
@@ -73,4 +74,21 @@
 		</table>
 	</form>
 </body>
+<script src="../javascript/common.js"></script>
+<script>
+	function validate(event) {
+		event.preventDefault();
+		let form = document.getElementById("registrationForm");
+		let email = document.getElementById("email");
+		let password = document.getElementById("password");
+		let passwordAgain = document.getElementById("passwordAgain")
+
+		if (isValidEmail(email) && isValidPasswordLength(password)
+				&& areBothPasswordsEqual(password, passwordAgain)) {
+			form.submit();
+			return true;
+		}
+		return false;
+	}
+</script>
 </html>

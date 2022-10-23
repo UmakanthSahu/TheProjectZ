@@ -4,16 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Logout Success</title>
+<title>Session Expired</title>
 </head>
 <body>
-
 	<div>
-		<h2>Logout Success</h2>
+		<h2>Session Expired</h2>
 	</div>
 	<div>
 		<p>This web page will be automatically redirected to Login Page in
-			5 secs.</p>
+			3 secs.</p>
 	</div>
 	<div>
 		<a href="login">Login Here</a>
@@ -22,6 +21,10 @@
 <script>
 	setTimeout(function() {
 		window.location.href = 'login';
-	}, 5000);
+	}, 3000);
 </script>
+</html>
+
+
+</body>
 </html>

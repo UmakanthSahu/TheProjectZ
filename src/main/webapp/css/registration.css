@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
-tr{
-	margin: 10px;
+td{
+	padding : 15px;
+}
+
+table tr td:nth-child(2) {
+    background: #ccc;
+}
+
+body{
+	background-color: red;
 }

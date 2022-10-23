@@ -12,9 +12,10 @@ public class DashboardController {
 	@RequestMapping("/dashboard")
 	public ModelAndView showDashboard(HttpSession session) {
 		String email = (String) session.getAttribute("email");
-		if(email != null) {
+		if (email != null) {
 			return new ModelAndView("dashboard", "email", email);
 		}
-		return new ModelAndView("redirect:/login");
+		return new ModelAndView("sessionExpired");
 	}
+
 }

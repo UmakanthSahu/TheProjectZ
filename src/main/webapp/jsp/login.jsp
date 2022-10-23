@@ -7,11 +7,12 @@
 <title>Login Page</title>
 <link type="text/css" rel="stylesheet" href="../css/registration.css">
 
+
 </head>
 <body>
 
-	<form action="/login" method="post">
-		<table align="center" >
+	<form action="/login" method="post" onsubmit="validate(event)" id="loginForm">
+		<table align="center">
 			<tr>
 				<td colspan="2" align="center">
 					<h2>Login Page</h2>
@@ -38,4 +39,20 @@
 		</table>
 	</form>
 </body>
+
+<script src="../javascript/common.js"></script>
+<script>
+	function validate(event) {
+		event.preventDefault();
+		let form = document.getElementById("loginForm");
+		let email = document.getElementById("email");
+		let password = document.getElementById("password");
+		
+		if( isValidEmail(email) && isValidPasswordLength(password)){
+			form.submit();
+			return true;
+		}
+		return false;
+	}
+</script>
 </html>

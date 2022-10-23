@@ -12,7 +12,7 @@
 		<%
 		if ((Boolean) request.getAttribute("isRegistrationSuccessful")) {
 		%>
-		<h2 style='color:green'>Registration Success</h2>
+		<h2 style='color: green'>Registration Success</h2>
 		<div>
 			<a href="login">Please login here</a>
 		</div>
@@ -20,8 +20,8 @@
 		<%
 		} else {
 		%>
-		
-		<h2 style='color:red'>Registration Failed</h2>
+
+		<h2 style='color: red'>Registration Failed</h2>
 		<div>
 			<p>email id already registered</p>
 		</div>

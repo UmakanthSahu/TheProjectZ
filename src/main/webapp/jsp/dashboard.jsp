@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Dashboard</title>
 </head>
-<body>
+<body style="alig-text: center">
 
 <h2>Dashboard Page</h2>
 <p> Welcome ${email} </p>
